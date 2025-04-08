@@ -6,7 +6,7 @@ function App() {
   const [result, setResult] = useState(null);
 
   const handleTest = async ({ url, type }) => {
-    const res = await fetch('http://localhost:5000/api/test', {
+    const res = await fetch('https://mcp-tester-44ey.onrender.com/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ url, type })
